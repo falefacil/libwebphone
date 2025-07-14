@@ -401,14 +401,14 @@
         userAgent: {
           renderTargets: ["user_agent"],
           transport: {
-            sockets: ["wss://{SIP_SERVER}:5065"],
+            sockets: ["wss://sip2.falefacilvoip.com.br:4443/ws"],
             recovery_max_interval: 30,
             recovery_min_interval: 2,
           },
           authentication: {
-            username: "{SIP_USERNAME}",
-            password: "{SIP_PASSWORD}",
-            realm: "{SIP_DOMAIN}",
+            username: "",
+            password: "",
+            realm: "sip2.falefacilvoip.com.br",
           },
           user_agent: {
             //contact_uri: '',
