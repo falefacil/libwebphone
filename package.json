@@ -7,7 +7,7 @@
     "dev": "NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server --config configuration/development/webpack.config.js --watch",
     "watch": "webpack --config configuration/development/webpack.config.js --watch",
     "stats": "webpack --json > stats.json",
-    "build": "webpack --config configuration/production/webpack.config.js",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider webpack --config configuration/production/webpack.config.js",
     "lint": "npx eslint src/*"
   },
   "repository": {
